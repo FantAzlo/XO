@@ -1,3 +1,3 @@
 # XO
-Tic-tac-toe
+Tic-tac-toe/
 Simple pet-project for fun
