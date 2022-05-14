@@ -1,6 +1,68 @@
 <!DOCTYPE html>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<style>@import url("/Style.css");</style>
+<style type="text/css">
+.ContentField {
+    display: flex;
+    justify-content: center;
+}
+
+.GameField {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.GameFieldText {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.Str {
+    display: flex;
+}
+
+.GameButton {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    margin: 1px;
+    border-radius: 0px;
+    background-color: white;
+}
+
+.GameButton:hover {
+    cursor: pointer;
+    background-color: gainsboro;
+}
+
+.WinText {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.WinText:hover {
+    cursor: pointer;
+}
+
+button {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    margin: 0px;
+    padding: 0px;
+}
+
+</style>
 <script>
     {
         let gameField = []
