@@ -3,66 +3,80 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <style type="text/css">
-.ContentField {
-    display: flex;
-    justify-content: center;
-}
 
-.GameField {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid black;
-    padding: 5px;
-}
+    body {
+        padding: 0;
+        margin: 0;
+    }
 
-.GameFieldText {
-    border: 1px solid black;
-    text-align: center;
-    font-size: 20px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-}
+    .ContentField {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(255, 69, 188);
+        height: 100vh;
+    }
 
-.Str {
-    display: flex;
-}
+    .GameField {
+        margin-top: 50px;
+        display: flex;
+        height: 470px;
+        flex-direction: column;
+        padding: 20px;
+        border: 1px solid gray;
+        border-radius: 15px;
+        background-color: rgb(169, 130, 255);
+    }
 
-.GameButton {
-    height: 100px;
-    width: 100px;
-    border: 1px solid black;
-    margin: 1px;
-    border-radius: 0px;
-    background-color: white;
-}
+    .GameFieldText {
+        border: 2px solid rgb(255, 250, 239);
+        color: rgb(255, 250, 239);
+        border-radius: 15px;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
 
-.GameButton:hover {
-    cursor: pointer;
-    background-color: gainsboro;
-}
+    .Str {
+        display: flex;
+    }
 
-.WinText {
-    border: 1px solid black;
-    text-align: center;
-    font-size: 25px;
-    margin-top: 20px;
-    margin-bottom: 5px;
-}
+    .GameButton {
+        height: 100px;
+        width: 100px;
+        border: 0px solid black;
+        margin: 3px;
+        border-radius: 15px;
+        background-color: rgb(255, 250, 239);
+    }
 
-.WinText:hover {
-    cursor: pointer;
-}
+    .GameButton:hover {
+        cursor: pointer;
+        background-color: gainsboro;
+    }
 
-button {
-    margin: 0px;
-    padding: 0px;
-}
+    .WinText {
+        border: 0px solid black;
+        border-radius: 15px;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
 
-img {
-    margin: 0px;
-    padding: 0px;
-}
+    .WinText:hover {
+        cursor: pointer;
+    }
+
+    button {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    img {
+        margin: 0px;
+        padding: 0px;
+    }
 
 </style>
 
@@ -164,13 +178,14 @@ img {
     }
 
     //Пример класса
-    class Img{
+    class Img {
         constructor(src, width, height) {
             this.src = src
             this.width = width
             this.height = height
         }
-        getDomElement(){
+
+        getDomElement() {
             let img = document.createElement("img")
             img.src = this.src
             img.width = this.width
